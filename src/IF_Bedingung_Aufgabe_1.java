@@ -6,17 +6,13 @@ public class IF_Bedingung_Aufgabe_1 {
         Random random = new Random();
         int randomNumber = random.nextInt(100);
         System.out.println(randomNumber);
-        if (randomNumber < 20){
+        if (randomNumber < 20) {
             System.out.println("Mini");
-            }
-        else if (randomNumber < 50 && randomNumber > 19){
+        } else if (randomNumber < 50 && randomNumber > 19) {
             System.out.println("Medium");
-        }
-        else {
+        } else {
             System.out.println("Large");
         }
-
-
 
 
     }

@@ -6,11 +6,10 @@ public class Switch_Aufgabe_1 {
 
         Random random = new Random();
 
-        int randomNumber1 = random.nextInt(5)+6;
+        int randomNumber1 = random.nextInt(5) + 6;
 
 
-
-        switch (randomNumber1){
+        switch (randomNumber1) {
             case 10:
                 System.out.println("Ten");
                 break;
@@ -29,8 +28,6 @@ public class Switch_Aufgabe_1 {
             case 5:
                 System.out.println("Five");
                 break;
-
-
 
 
         }
