@@ -1,6 +1,7 @@
 import javax.xml.transform.Source;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Wuerfelspiel {
     public static void main(String[] args) {
@@ -8,6 +9,9 @@ public class Wuerfelspiel {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         boolean nejo = true;
+        boolean valid = false;
+
+
         while (nejo) {
             int playerwuerfelsumme = 0;
             int pcwuerfelsumme = 0;
@@ -15,21 +19,25 @@ public class Wuerfelspiel {
             for (int i = 0; i < 6; i++) {
                 int playerwuerfeln = random.nextInt(6) + 1;
                 int pcwuerfeln = random.nextInt(6) + 1;
+                int auswahl = 0;
 
 
-                System.out.println("1 zum Wuerfeln");
-                System.out.println("2 zum Beenden");
-                int auswahl = scanner.nextInt();
+                System.out.println("1: Wuerfeln");
+                System.out.println("2: Beenden");
+
+                auswahl=scanner.nextInt();
 
 
                 if (auswahl == 1) {
                     System.out.println("Du hast " + playerwuerfeln + " gewuerfelt");
                     playerwuerfelsumme += playerwuerfeln;
-                    System.out.println("Deine Wuerfelsumme: " + playerwuerfelsumme);
-
                     System.out.println("Der Computer hat " + pcwuerfeln + " gewuerfelt");
                     pcwuerfelsumme += pcwuerfeln;
+                    System.out.println("Deine Wuerfelsumme: " + playerwuerfelsumme);
                     System.out.println("Seine Wuerfelsumme: " + pcwuerfelsumme);
+                } else if (auswahl == 2) {
+                    System.out.println("Spiel beendet!");
+                    nejo = false;
                 }
             }
             if (playerwuerfelsumme > pcwuerfelsumme) {
@@ -41,10 +49,15 @@ public class Wuerfelspiel {
             } else {
                 System.out.println("Fehler, Nejo schuld!");
             }
-            System.out.println("");
+            System.out.println("1: Nochmal spielen");
+            System.out.println("2: Beenden");
             int auswahl2 = scanner.nextInt();
-
-            nejo = false;
+            if (auswahl2 == 2) {
+                System.out.println("Spiel beendet");
+                nejo = false;
+            } else if (auswahl2 == 1) {
+                System.out.println("Neues Spiel");
+            }
 
         }
     }
