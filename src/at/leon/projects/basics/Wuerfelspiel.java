@@ -1,7 +1,7 @@
-import javax.xml.transform.Source;
+package at.leon.projects.basics;
+
 import java.util.Random;
 import java.util.Scanner;
-import java.util.InputMismatchException;
 
 public class Wuerfelspiel {
     public static void main(String[] args) {
@@ -25,7 +25,7 @@ public class Wuerfelspiel {
                 System.out.println("1: Wuerfeln");
                 System.out.println("2: Beenden");
 
-                auswahl=scanner.nextInt();
+                auswahl = scanner.nextInt();
 
 
                 if (auswahl == 1) {

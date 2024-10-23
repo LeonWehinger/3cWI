@@ -1,3 +1,5 @@
+package at.leon.projects.basics;
+
 public class Loops_Aufgabe_1 {
     public static void main(String[] args) {
 

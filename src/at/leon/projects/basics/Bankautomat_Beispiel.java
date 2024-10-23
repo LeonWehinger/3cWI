@@ -1,3 +1,5 @@
+package at.leon.projects.basics;
+
 import java.util.Scanner;
 
 public class Bankautomat_Beispiel {

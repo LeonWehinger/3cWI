@@ -1,3 +1,5 @@
+package at.leon.projects.basics;
+
 import java.util.Random;
 
 public class IF_Bedingung_Aufgabe_2 {
