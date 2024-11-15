@@ -25,8 +25,9 @@ public class Woerter_Raten {
                 if (guess == wordarray[i]) {
                     hiddenarray[i] = guess;
                 }
-                if (hiddenarray == wordarray) {
-                    System.out.println("Das Wort war:" + Word);
+                String string = new String(hiddenarray);
+                if (string.equals(Word)){
+                    System.out.println("The word was: "+Word);
                     finished = true;
                 }
 
