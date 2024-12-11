@@ -108,10 +108,9 @@ public class Car {
     public String getTrailer_hitch() {
 
         String temp = "";
-        if (trailer_hitch){
+        if (trailer_hitch) {
             temp = "has a trailer hitch";
-        }
-        else if (!trailer_hitch){
+        } else if (!trailer_hitch) {
             temp = "has no trailer hitch";
 
         }
