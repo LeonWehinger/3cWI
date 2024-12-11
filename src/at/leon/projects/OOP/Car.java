@@ -7,16 +7,17 @@ public class Car {
     private int maxFuelAmount;
     private String color;
     private String serialNumber;
+    private boolean trailer_hitch;
 
 
-
-    public Car(String brand, int fuelConsumption, int fuelAmount, int maxFuelAmount, String serialNumber, String color) {
+    public Car(String brand, int fuelConsumption, int fuelAmount, int maxFuelAmount, String serialNumber, String color, boolean trailer_hitch) {
         this.brand = brand;
         this.fuelConsumption = fuelConsumption;
         this.fuelAmount = fuelAmount;
         this.maxFuelAmount = maxFuelAmount;
         this.serialNumber = serialNumber;
         this.color = color;
+        this.trailer_hitch = trailer_hitch;
     }
 
     public void drive() {
@@ -48,7 +49,7 @@ public class Car {
     }
 
 
-
+    //Getter & Setter
 
 
     public String getBrand() {
@@ -98,5 +99,23 @@ public class Car {
 
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
+    }
+
+    public void setTrailer_hitch(boolean trailer_hitch) {
+        this.trailer_hitch = trailer_hitch;
+    }
+
+    public String getTrailer_hitch() {
+
+        String temp = "";
+        if (trailer_hitch){
+            temp = "has a trailer hitch";
+        }
+        else if (!trailer_hitch){
+            temp = "has no trailer hitch";
+
+        }
+
+        return temp;
     }
 }
