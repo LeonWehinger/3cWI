@@ -8,9 +8,10 @@ public class Car {
     private String color;
     private String serialNumber;
     private boolean trailer_hitch;
+    private Engine engine;
 
 
-    public Car(String brand, int fuelConsumption, int fuelAmount, int maxFuelAmount, String serialNumber, String color, boolean trailer_hitch) {
+    public Car(String brand, int fuelConsumption, int fuelAmount, int maxFuelAmount, String serialNumber, String color, boolean trailer_hitch, Engine engine) {
         this.brand = brand;
         this.fuelConsumption = fuelConsumption;
         this.fuelAmount = fuelAmount;
@@ -18,12 +19,9 @@ public class Car {
         this.serialNumber = serialNumber;
         this.color = color;
         this.trailer_hitch = trailer_hitch;
+        this.engine = engine;
     }
 
-    public void drive() {
-        this.fuelAmount = this.fuelAmount - this.fuelConsumption;
-        System.out.println("I am driving!");
-    }
 
     public void dobreak() {
         System.out.println("I am braking!");
