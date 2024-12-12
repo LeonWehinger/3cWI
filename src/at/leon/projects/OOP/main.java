@@ -26,6 +26,8 @@ public class main {
         car1.addMirror(r2);
         car1.addMirror(r3);
 
+        ;
+
     }
 
 }
