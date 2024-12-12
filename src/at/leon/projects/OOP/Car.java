@@ -1,5 +1,8 @@
 package at.leon.projects.OOP;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Car {
     private String brand;
     private int fuelConsumption;
@@ -9,6 +12,7 @@ public class Car {
     private String serialNumber;
     private boolean trailer_hitch;
     private Engine engine;
+    private List<RearMirror>mirrors;
 
 
     public Car(String brand, int fuelConsumption, int fuelAmount, int maxFuelAmount, String serialNumber, String color, boolean trailer_hitch, Engine engine) {
@@ -20,6 +24,13 @@ public class Car {
         this.color = color;
         this.trailer_hitch = trailer_hitch;
         this.engine = engine;
+        this.mirrors = new ArrayList<>();
+    }
+
+
+
+    public void addMirror(RearMirror rearMirror) {
+        this.mirrors.add(rearMirror);
     }
 
 
@@ -101,6 +112,14 @@ public class Car {
 
     public void setTrailer_hitch(boolean trailer_hitch) {
         this.trailer_hitch = trailer_hitch;
+    }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
+
+    public void setMirrors(List<RearMirror> mirrors) {
+        this.mirrors = mirrors;
     }
 
     public String getTrailer_hitch() {

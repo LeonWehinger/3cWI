@@ -1,10 +1,12 @@
 package at.leon.projects.OOP;
 
 
+import org.w3c.dom.ranges.Range;
+
 public class Engine {
     public enum TYPE {DIESEL, GAS}
 
-    ;
+
     private int horsePower;
     private TYPE type;
 
@@ -14,7 +16,12 @@ public class Engine {
     }
 
     public void drive(int amount) {
-        System.out.println("The motor is running with " + amount);
+        if(amount >= 1 && amount <= 100) {
+            System.out.println("You are driving at " + amount * 2.5 + " km/h");
+        }
+        else {
+            System.out.println("Please select a number between 1 and 100!");
+        }
     }
 
 

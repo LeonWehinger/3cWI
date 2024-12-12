@@ -18,7 +18,16 @@ public class main {
         car1.getRemainingRange();
         e1.drive(50);
 
+        RearMirror r1 = new RearMirror(100, RearMirror.POSITION.l);
+        RearMirror r2 = new RearMirror(100, RearMirror.POSITION.r);
+        RearMirror r3 = new RearMirror(90, RearMirror.POSITION.m);
+
+        car1.addMirror(r1);
+        car1.addMirror(r2);
+        car1.addMirror(r3);
 
     }
 
 }
+
+
