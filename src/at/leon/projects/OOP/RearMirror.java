@@ -5,7 +5,6 @@ public class RearMirror {
 
     public enum POSITION {l, r, m}
 
-    ;
     private POSITION position;
 
     public RearMirror(int size, POSITION position) {
