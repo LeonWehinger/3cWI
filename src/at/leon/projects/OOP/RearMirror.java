@@ -2,7 +2,10 @@ package at.leon.projects.OOP;
 
 public class RearMirror {
     private int size;
-    public enum POSITION{l,r,m};
+
+    public enum POSITION {l, r, m}
+
+    ;
     private POSITION position;
 
     public RearMirror(int size, POSITION position) {

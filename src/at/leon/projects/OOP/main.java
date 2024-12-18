@@ -36,9 +36,6 @@ public class main {
         System.out.println(car1.getTires().get(0).getRimColor());
 
 
-
-
-
     }
 
 }

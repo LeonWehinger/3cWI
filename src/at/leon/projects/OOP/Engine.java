@@ -16,10 +16,9 @@ public class Engine {
     }
 
     public void drive(int amount) {
-        if(amount >= 1 && amount <= 100) {
+        if (amount >= 1 && amount <= 100) {
             System.out.println("You are driving at " + amount * 2.5 + " km/h");
-        }
-        else {
+        } else {
             System.out.println("Please select a number between 1 and 100!");
         }
     }
