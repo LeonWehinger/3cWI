@@ -12,10 +12,11 @@ public class Car {
     private String serialNumber;
     private boolean trailer_hitch;
     private Engine engine;
-    private List<RearMirror>mirrors;
+    private List<RearMirror> mirrors;
+    private List<Tire> tires;
 
 
-    public Car(String brand, int fuelConsumption, int fuelAmount, int maxFuelAmount, String serialNumber, String color, boolean trailer_hitch, Engine engine) {
+    public Car(String brand, int fuelConsumption, int fuelAmount, int maxFuelAmount, String serialNumber, String color, boolean trailer_hitch, Engine engine, Tire tires) {
         this.brand = brand;
         this.fuelConsumption = fuelConsumption;
         this.fuelAmount = fuelAmount;
@@ -25,12 +26,16 @@ public class Car {
         this.trailer_hitch = trailer_hitch;
         this.engine = engine;
         this.mirrors = new ArrayList<>();
+        this.tires = new ArrayList<>();
     }
-
 
 
     public void addMirror(RearMirror rearMirror) {
         this.mirrors.add(rearMirror);
+    }
+
+    public void addTires(Tire tires) {
+        this.tires.add(tires);
     }
 
 
@@ -133,5 +138,13 @@ public class Car {
         }
 
         return temp;
+    }
+
+    public List<Tire> getTires() {
+        return tires;
+    }
+
+    public void setTires(List<Tire> tires) {
+        this.tires = tires;
     }
 }
