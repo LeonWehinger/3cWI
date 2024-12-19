@@ -16,7 +16,7 @@ public class Car {
     private List<Tire> tires;
 
 
-    public Car(String brand, int fuelConsumption, int fuelAmount, int maxFuelAmount, String serialNumber, String color, boolean trailer_hitch, Engine engine, Tire tires) {
+    public Car(String brand, int fuelConsumption, int fuelAmount, int maxFuelAmount, String serialNumber, String color, boolean trailer_hitch, Engine engine) {
         this.brand = brand;
         this.fuelConsumption = fuelConsumption;
         this.fuelAmount = fuelAmount;

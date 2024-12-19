@@ -1,26 +1,23 @@
 package at.leon.projects.OOP;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Remote {
-    private List<Battery>battery;
+    private List<Battery>batteryList;
     private String color;
 
-    public Remote(List<Battery> battery, String color) {
-        this.battery = battery;
+    public Remote( String color) {
         this.color = color;
+        this.batteryList = new ArrayList<Battery>();
     }
 
-
-
-
-
     public List<Battery> getBattery() {
-        return battery;
+        return batteryList;
     }
 
     public void setBattery(List<Battery> battery) {
-        this.battery = battery;
+        this.batteryList = battery;
     }
 
     public String getColor() {
@@ -30,4 +27,10 @@ public class Remote {
     public void setColor(String color) {
         this.color = color;
     }
+
+    public List<Battery> addBattery(Battery battery){
+        batteryList.add(battery);
+        return null;
+    }
+
 }

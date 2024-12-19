@@ -15,6 +15,11 @@ public class Battery {
     public void setChargingStatus(float chargingStatus) {
         this.chargingStatus = chargingStatus;
     }
+
+    @Override
+    public String toString(){
+        return "Charging Status: " + this.chargingStatus;
+    }
 }
 
 

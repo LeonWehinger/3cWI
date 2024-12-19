@@ -12,12 +12,13 @@ public class main {
         Tire t2 = new Tire(100, "black");
         Tire t3 = new Tire(100, "black");
         Tire t4 = new Tire(100, "black");
-        Car car1 = new Car("Porsche", 7, 140, 140, "P1234", "black", false, e1, t1);
+        Car car1 = new Car("Porsche", 7, 140, 140, "P1234", "black", false, e1);
 
 
         car1.addMirror(r1);
         car1.addMirror(r2);
         car1.addMirror(r3);
+        car1.addTires(t1);
         car1.addTires(t2);
         car1.addTires(t3);
         car1.addTires(t4);
