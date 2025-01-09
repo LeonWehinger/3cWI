@@ -1,8 +1,6 @@
 package at.leon.projects.OOP;
 
 
-import org.w3c.dom.ranges.Range;
-
 public class Engine {
     public enum TYPE {DIESEL, GAS}
 
