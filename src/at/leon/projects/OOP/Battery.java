@@ -1,8 +1,9 @@
 package at.leon.projects.OOP;
 
+
 public class Battery {
     private float chargingStatus;
-
+    private Remote remote;
 
     public Battery(float chargingStatus) {
         this.chargingStatus = chargingStatus;
@@ -16,10 +17,15 @@ public class Battery {
         this.chargingStatus = chargingStatus;
     }
 
-    @Override
-    public String toString(){
-        return "Charging Status: " + this.chargingStatus + "\n";
+
+    public Remote getRemote() {
+        return remote;
     }
+
+    public void setRemote(Remote remote) {
+        this.remote = remote;
+    }
+
 }
 
 
