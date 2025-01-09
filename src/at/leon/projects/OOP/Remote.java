@@ -4,15 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Remote {
-    private List<Battery>batteryList;
+    private List<Battery>batteryList = new ArrayList<Battery>();
     private String color;
 
     public Remote( String color) {
         this.color = color;
-        this.batteryList = new ArrayList<Battery>();
     }
 
-    public List<Battery> getBattery() {
+    public List<Battery> getBatteryList() {
         return batteryList;
     }
 

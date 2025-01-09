@@ -18,7 +18,7 @@ public class Battery {
 
     @Override
     public String toString(){
-        return "Charging Status: " + this.chargingStatus;
+        return "Charging Status: " + this.chargingStatus + "\n";
     }
 }
 
