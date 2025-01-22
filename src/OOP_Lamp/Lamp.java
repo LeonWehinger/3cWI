@@ -9,8 +9,21 @@ public class Lamp {
 
 
     public Lamp(List<LightElement> elementList, String color) {
-        ElementList = elementList;
+        this.ElementList = elementList;
         this.color = color;
+    }
+
+
+
+    public void turnALlOn(List<LightElement> elementList) {
+
+        for (LightElement element : elementList) {
+            element.turnOn();
+        }
+    }
+
+    public void addElement(LightElement element) {
+        ElementList.add(element);
     }
 
 
@@ -21,7 +34,7 @@ public class Lamp {
     }
 
     public void setElementList(List<LightElement> elementList) {
-        ElementList = elementList;
+        this.ElementList = elementList;
     }
 
     public String getColor() {
