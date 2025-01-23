@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Lamp {
-    private List<LightElement> ElementList= new ArrayList<>();
+    private List<LightElement> ElementList;
     private String color;
 
 
@@ -13,7 +13,19 @@ public class Lamp {
         this.color = color;
     }
 
+    public void getOverallPowerUsage(List<LightElement> elementList) {
+        int i = 0;
+        for (LightElement element : elementList) {
+            i += element.getPowerConsumption();
+        }
+        System.out.println(i);
+    }
 
+    public void getNamesOfLightelements(List<LightElement> elementList) {
+        for (LightElement element : elementList){
+            System.out.println(element.getName());
+        }
+    }
 
     public void turnALlOn(List<LightElement> elementList) {
 
