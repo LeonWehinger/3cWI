@@ -1,6 +1,5 @@
-package OOP_Lamp;
+package at.leon.projects.OOP_Lamp;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Lamp {

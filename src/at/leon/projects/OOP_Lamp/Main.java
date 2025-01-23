@@ -1,4 +1,4 @@
-package OOP_Lamp;
+package at.leon.projects.OOP_Lamp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class Main {
         LightElement le5 = new LightElement("Jaydenguam", "blue", 0);
         List<LightElement> elementlist = new ArrayList<LightElement>();
 
-        Lamp l1 = new Lamp(elementlist,"black");
+        Lamp l1 = new Lamp(elementlist, "blue");
         l1.addElement(le1);
         l1.addElement(le2);
         l1.addElement(le3);

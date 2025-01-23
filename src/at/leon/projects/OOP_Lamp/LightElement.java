@@ -1,7 +1,4 @@
-package OOP_Lamp;
-
-import at.leon.projects.OOP.Engine;
-import java.lang.reflect.Type;
+package at.leon.projects.OOP_Lamp;
 
 public class LightElement {
     public boolean StatusOn = false;

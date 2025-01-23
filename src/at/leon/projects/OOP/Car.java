@@ -16,7 +16,7 @@ public class Car {
     private List<Tire> tires;
 
 
-    public Car(String brand, int fuelConsumption, int fuelAmount, int maxFuelAmount, String serialNumber, String color, boolean trailer_hitch, Engine engine) {
+    public Car(List mirrors,List tires,String brand, int fuelConsumption, int fuelAmount, int maxFuelAmount, String serialNumber, String color, boolean trailer_hitch, Engine engine) {
         this.brand = brand;
         this.fuelConsumption = fuelConsumption;
         this.fuelAmount = fuelAmount;
@@ -127,17 +127,17 @@ public class Car {
         this.mirrors = mirrors;
     }
 
-    public String getTrailer_hitch() {
+    public boolean getTrailer_hitch() {
 
-        String temp = "";
         if (trailer_hitch) {
-            temp = "has a trailer hitch";
-        } else if (!trailer_hitch) {
-            temp = "has no trailer hitch";
+            System.out.println("has a trailer hitch");
+            return true;
+        } else {
+            System.out.println("has no trailer hitch");
+            return false;
 
         }
 
-        return temp;
     }
 
     public List<Tire> getTires() {

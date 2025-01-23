@@ -1,5 +1,8 @@
 package at.leon.projects.OOP;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class main {
 
     public static void main(String[] args) {
@@ -12,7 +15,9 @@ public class main {
         Tire t2 = new Tire(100, "black");
         Tire t3 = new Tire(100, "black");
         Tire t4 = new Tire(100, "black");
-        Car car1 = new Car("Porsche", 7, 140, 140, "P1234", "black", false, e1);
+        List<Tire> tirelist = new ArrayList<Tire>();
+        List<RearMirror> mirrorlist = new ArrayList<RearMirror>();
+        Car car1 = new Car(mirrorlist,tirelist,"Porsche", 7, 140, 140, "P1234", "black", false, e1);
 
 
         car1.addMirror(r1);
