@@ -20,6 +20,16 @@ public class Truck extends Car {
         }
     }
 
+    @Override
+    public void drive() {
+        System.out.println("I am driving a truck!");
+    }
+
+    @Override
+    public void dobreak() {
+        System.out.println("I am braking with a truck!");
+    }
+
     public String getTrailer() {
         return trailer;
     }

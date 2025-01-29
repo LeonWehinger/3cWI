@@ -17,6 +17,9 @@ public class MainTruck {
         Truck t1 = new Truck(mirrors, tires, "Nejo",25,200,200,"Nejo187","black",false,e1,"Nejoleinchen");
         System.out.println(t1.getTrailer());
 
+        t1.drive();
+        t1.dobreak();
+
 
 
 

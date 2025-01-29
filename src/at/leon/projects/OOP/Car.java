@@ -43,6 +43,10 @@ public class Car {
         System.out.println("I am braking!");
     }
 
+    public void drive() {
+        System.out.println("I am driving!");
+    }
+
     public void turboBoost() {
         if (this.fuelAmount >= this.maxFuelAmount * 0.1) {
             System.out.println("SuperBoostMode");
