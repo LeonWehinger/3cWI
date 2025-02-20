@@ -12,4 +12,21 @@ public class Handy {
         this.speicherkarte = speicherkarte;
         this.kamera = kamera;
     }
+
+
+    public String getColor() {
+        return color;
+    }
+
+    public Speicherkarte getSpeicherkarte() {
+        return speicherkarte;
+    }
+
+    public SimKarte getSimKarte() {
+        return simKarte;
+    }
+
+    public Kamera getKamera() {
+        return kamera;
+    }
 }
