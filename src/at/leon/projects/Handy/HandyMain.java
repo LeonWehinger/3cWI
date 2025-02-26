@@ -18,7 +18,7 @@ public class HandyMain {
  h1.changeSpeicherkarte(sp1);
  h1.getSpeicherkarte().getFiles();
  h1.changeSimKarte(s2);
- h1.changeKamera(k2);
+ h1.changeKamera(k2);;
 
 
 
