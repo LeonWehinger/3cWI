@@ -11,6 +11,7 @@ public class Speicherkarte {
     public Speicherkarte(int capacityGB) {
         this.capacityGB = capacityGB;
         this.fileList = new ArrayList<PhoneFile>();
+        this.freeSpace = capacityGB;
 
     }
 
@@ -18,8 +19,8 @@ public class Speicherkarte {
         this.fileList.add(phoneFile);
     }
 
-    public void getFiles(ArrayList<PhoneFile> fileList){
-        for (PhoneFile phoneFile: fileList){
+    public void getFiles(){
+        for (PhoneFile phoneFile: this.fileList){
             System.out.println("name: "+phoneFile.getName());
             System.out.println("size in GB: "+phoneFile.getSizeGB());
         }

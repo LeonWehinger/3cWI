@@ -19,7 +19,14 @@ public class Kamera {
         System.out.println("Name:");
         String name = scanner.next();
         PhoneFile phoneFile = new PhoneFile(size,name);
-        speicherkarte.addFile(phoneFile);
+        speicherkarte.freeSpace = speicherkarte.freeSpace - size;
+        if (speicherkarte.freeSpace <= 0){
+            System.out.println("Zu wenig Speicherplatz!");
+        }
+        else {
+            speicherkarte.addFile(phoneFile);
+        }
+
 
     }
 }
